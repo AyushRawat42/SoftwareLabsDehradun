@@ -10,4 +10,16 @@
   html {
     scroll-behavior: smooth;
   }
+
+  #home,
+  #product,
+  #services,
+  #projects,
+  #why-choose-us,
+  #process,
+  #faq,
+  #contact,
+  #main-content {
+    scroll-margin-top: 5.5rem;
+  }
 }

@@ -58,10 +58,17 @@ export default function Header() {
 
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
-    setIsMobileMenuOpen(false);
+    e.stopPropagation();
     const targetId = href.substring(1);
-    scrollToId(targetId);
+    setIsMobileMenuOpen(false);
     setActiveSection(targetId);
+
+    window.setTimeout(() => {
+      scrollToId(targetId);
+      if (targetId) {
+        history.replaceState(null, '', `#${targetId}`);
+      }
+    }, 220);
   };
 
   return (
@@ -146,7 +153,7 @@ export default function Header() {
                     key={link.name}
                     href={link.href}
                     onClick={(e) => handleLinkClick(e, link.href)}
-                    className={`block px-4 py-3 rounded-md font-sans text-base font-medium transition-colors ${
+                    className={`block px-4 py-3 rounded-md font-sans text-base font-medium transition-colors touch-manipulation ${
                       isActive
                         ? 'bg-gray-50 text-[#0F2D54] border-l-4 border-[#10A5B5]'
                         : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'

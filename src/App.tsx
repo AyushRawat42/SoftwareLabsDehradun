@@ -22,7 +22,7 @@ export default function App() {
   const [legalDoc, setLegalDoc] = useState<LegalDoc>(null);
 
   return (
-    <div className="min-h-screen bg-white text-gray-900 font-sans antialiased overflow-x-hidden selection:bg-[#10A5B5]/20 selection:text-[#0F2D54]">
+    <div className="min-h-screen bg-white text-gray-900 font-sans antialiased overflow-x-clip selection:bg-[#10A5B5]/20 selection:text-[#0F2D54]">
       <a
         href="#main-content"
         onClick={(e) => {
