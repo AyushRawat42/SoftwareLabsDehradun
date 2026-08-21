@@ -7,6 +7,9 @@ import React from 'react';
 import { Search, Compass, Cpu, HelpCircle, Rocket, Check } from 'lucide-react';
 import { motion } from 'motion/react';
 import { ProcessStep } from '../types';
+import { product } from '../data/product';
+import { ENQUIRY_ERP_DEMO } from '../data/site';
+import { requestEnquiry } from '../utils/scroll';
 
 export default function Process() {
   const steps: ProcessStep[] = [
@@ -71,7 +74,7 @@ export default function Process() {
             How We Work
           </h2>
           <p className="text-lg text-gray-600 font-sans leading-relaxed" id="process-subheadline">
-            We follow a structured, high-transparency process to ensure your project is delivered on schedule, with zero budget surprises.
+            Custom websites and portals follow a fixed-scope build. The Higher Education ERP follows a 30-day onboarding track of its own.
           </p>
         </div>
 
@@ -149,6 +152,36 @@ export default function Process() {
             ))}
           </div>
 
+        </div>
+
+        <div className="mt-20 border border-gray-200 rounded-xl bg-white p-6 sm:p-10 text-left">
+          <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 mb-8">
+            <div className="space-y-2 max-w-2xl">
+              <span className="text-xs font-mono font-bold tracking-widest text-[#10A5B5] uppercase block">
+                Higher Education ERP
+              </span>
+              <h3 className="text-2xl font-display font-bold text-gray-900">30-Day Campus Onboarding</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Automated ETL pipelines move historical records from your current software in weeks rather than months. Configuration, training, and go-live sit on a single calendar.
+              </p>
+            </div>
+            <button
+              type="button"
+              onClick={() => requestEnquiry(ENQUIRY_ERP_DEMO)}
+              className="bg-[#0F2D54] hover:bg-[#143e74] text-white font-sans font-medium text-sm px-5 py-2.5 rounded-md cursor-pointer shrink-0"
+            >
+              Start an onboarding conversation
+            </button>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {product.onboardingSteps.map((step, index) => (
+              <div key={step.title} className="border border-gray-100 rounded-lg p-5 bg-slate-50 space-y-2">
+                <span className="text-[10px] font-mono font-bold text-[#10A5B5] uppercase">Step {index + 1}</span>
+                <h4 className="font-display font-bold text-gray-900">{step.title}</h4>
+                <p className="text-xs text-gray-600 leading-relaxed">{step.text}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
       </div>

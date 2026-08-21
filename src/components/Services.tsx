@@ -4,24 +4,26 @@
  */
 
 import React from 'react';
-import { 
-  Globe, 
-  ClipboardCheck, 
-  BarChart3, 
-  LayoutGrid, 
-  Sparkles, 
+import {
+  Globe,
+  ClipboardCheck,
+  BarChart3,
+  LayoutGrid,
+  Sparkles,
   HeartHandshake,
-  CheckCircle2
+  CheckCircle2,
 } from 'lucide-react';
 import { motion } from 'motion/react';
 import { Service } from '../types';
+import { ENQUIRY_ERP_DEMO } from '../data/site';
+import { requestEnquiry } from '../utils/scroll';
 
 export default function Services() {
   const services: Service[] = [
     {
       id: 'websites',
       title: 'Business Websites',
-      description: 'High-performing, fully custom websites designed to present your organization with ultimate credibility. Built with absolute mobile responsiveness, rapid loading speeds, and optimized navigation.',
+      description: 'High-performing, fully custom websites designed to present your organization with credibility. Built with mobile responsiveness, rapid loading speeds, and clear navigation.',
       iconName: 'Globe',
       benefits: ['Optimized for local search & Google Maps', 'Custom CMS & easy text updates', 'Fast loading on mobile connections']
     },
@@ -40,23 +42,23 @@ export default function Services() {
       benefits: ['Visual charts & status updates', 'Export to Excel/PDF with one click', 'Secure roles for multiple staff members']
     },
     {
-      id: 'erp',
-      title: 'ERP-Style Portals',
-      description: 'Custom portal systems to manage internal business workflows, staff schedules, customer files, or inventory. We design layouts tailored to your exact team operations, not rigid off-the-shelf templates.',
+      id: 'portals',
+      title: 'Custom Operational Portals',
+      description: 'Bespoke internal systems for staff schedules, customer files, inventory, or workflows that do not fit a packaged product. Distinct from our Higher Education ERP — these portals are designed around your exact operations.',
       iconName: 'LayoutGrid',
-      benefits: ['Central database for all customer data', 'Automated task assignments', 'Saves hours of paper & manual work']
+      benefits: ['Central database for operational data', 'Automated task assignments', 'Saves hours of paper & manual work']
     },
     {
       id: 'redesigns',
       title: 'Website Redesigns',
-      description: 'Revitalize an outdated, slow, or hard-to-edit existing website. We modernize the look, restructure pages for higher customer conversions, and migrate your content safely without losing your current SEO rankings.',
+      description: 'Revitalize an outdated, slow, or hard-to-edit existing website. We modernize the look, restructure pages for higher conversions, and migrate content without losing current SEO rankings.',
       iconName: 'Sparkles',
       benefits: ['Modern premium layout redesign', 'Significant performance & speed boost', 'SEO-friendly redirect mapping']
     },
     {
       id: 'support',
       title: 'Ongoing Support',
-      description: 'Reliable monthly technical support so you never have to worry about security patches, server hosting, domain renewals, or small textual updates. We act as your fractional, on-call IT department.',
+      description: 'Reliable monthly technical support so you never have to worry about security patches, server hosting, domain renewals, or small textual updates. We act as your on-call technical partner.',
       iconName: 'HeartHandshake',
       benefits: ['Regular backups & security scans', 'Same-day minor changes guarantee', 'Hosting & domain maintenance included']
     }
@@ -77,22 +79,19 @@ export default function Services() {
   return (
     <section id="services" className="py-20 md:py-28 bg-white border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <span className="text-xs font-mono font-bold tracking-widest text-[#10A5B5] uppercase block" id="services-section-tag">
-            Our Services
+          <span className="text-xs font-mono font-bold tracking-widest text-[#10A5B5] uppercase block">
+            Custom Software
           </span>
-          <h2 className="text-3xl sm:text-4xl font-display font-bold text-gray-900 tracking-tight" id="services-headline">
-            What We Build
+          <h2 className="text-3xl sm:text-4xl font-display font-bold text-gray-900 tracking-tight">
+            What We Also Build
           </h2>
-          <p className="text-lg text-gray-600 font-sans leading-relaxed" id="services-subheadline">
-            We create practical digital systems that solve real business problems — from better websites to workflow tools your team can actually use.
+          <p className="text-lg text-gray-600 font-sans leading-relaxed">
+            Alongside the Higher Education ERP, we design practical digital systems for businesses and institutes — from websites to workflow tools your team can actually use.
           </p>
         </div>
 
-        {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="services-grid">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <motion.div
               key={service.id}
@@ -101,14 +100,11 @@ export default function Services() {
               viewport={{ once: true, margin: '-100px' }}
               transition={{ duration: 0.5, delay: index * 0.05 }}
               className="bg-white border border-gray-100 hover:border-gray-200 rounded-lg p-8 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
-              id={`service-card-${service.id}`}
             >
               <div className="space-y-6">
-                {/* Icon Container */}
-                <div className="w-12 h-12 rounded-md bg-[#10A5B5]/10 flex items-center justify-center" id={`service-icon-${service.id}`}>
+                <div className="w-12 h-12 rounded-md bg-[#10A5B5]/10 flex items-center justify-center">
                   {getIcon(service.iconName)}
                 </div>
-
                 <div className="space-y-3">
                   <h3 className="text-xl font-display font-bold text-gray-900 leading-tight">
                     {service.title}
@@ -119,10 +115,9 @@ export default function Services() {
                 </div>
               </div>
 
-              {/* Benefits Bullet Points */}
               <div className="mt-6 pt-6 border-t border-gray-50 space-y-2.5 text-left">
-                {service.benefits.map((benefit, bIndex) => (
-                  <div key={bIndex} className="flex items-start gap-2 text-xs font-sans text-gray-600">
+                {service.benefits.map((benefit) => (
+                  <div key={benefit} className="flex items-start gap-2 text-xs font-sans text-gray-600">
                     <CheckCircle2 className="w-4 h-4 text-green-500 shrink-0 mt-0.5" />
                     <span className="leading-tight font-medium">{benefit}</span>
                   </div>
@@ -132,24 +127,28 @@ export default function Services() {
           ))}
         </div>
 
-        {/* Section Footer / CTA Trigger */}
-        <div className="mt-16 text-center" id="services-bottom-cta">
+        <div className="mt-16 text-center space-y-2">
           <p className="text-sm font-sans text-gray-500">
-            Have a unique business workflow or specific portal requirement?{' '}
-            <a 
-              href="#contact" 
-              className="text-[#10A5B5] hover:text-[#0d8592] font-semibold underline underline-offset-4"
-              onClick={(e) => {
-                e.preventDefault();
-                const el = document.getElementById('contact');
-                if (el) el.scrollIntoView({ behavior: 'smooth' });
-              }}
+            Running a college or university?{' '}
+            <button
+              type="button"
+              className="text-[#10A5B5] hover:text-[#0d8592] font-semibold underline underline-offset-4 cursor-pointer"
+              onClick={() => requestEnquiry(ENQUIRY_ERP_DEMO)}
             >
-              Consult with us directly
-            </a>
+              Request a campus ERP demo
+            </button>
+          </p>
+          <p className="text-sm font-sans text-gray-500">
+            Need a custom website or portal instead?{' '}
+            <button
+              type="button"
+              className="text-[#10A5B5] hover:text-[#0d8592] font-semibold underline underline-offset-4 cursor-pointer"
+              onClick={() => requestEnquiry('Business Website')}
+            >
+              Discuss a custom project
+            </button>
           </p>
         </div>
-
       </div>
     </section>
   );

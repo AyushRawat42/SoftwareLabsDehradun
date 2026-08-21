@@ -1,20 +1,41 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Software Labs Dehradun
 
-# Run and deploy your AI Studio app
+Marketing brochure for **Software Labs Dehradun**: the Higher Education ERP for Indian colleges, autonomous institutes, and universities, plus custom websites and operational systems.
 
-This contains everything you need to run your app locally.
+Built with React 19, TypeScript, Vite 6, Tailwind CSS v4, Motion, and Lucide icons. All copy lives in the React components and `src/data/` files. There is no CMS or application backend.
 
-View your app in AI Studio: https://ai.studio/apps/120bebdd-59ea-44ad-a2c7-fb586ef52fa9
+## Product
 
-## Run Locally
+Software Labs Higher Education ERP is a cloud-native campus platform designed around NEP 2020 and NAAC Binary Accreditation: academics and credits, accreditation evidence, fees and Indian payment rails, examinations and attendance, and WhatsApp-first communication.
 
-**Prerequisites:**  Node.js
+## Run locally
 
+**Prerequisites:** Node.js 20+
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```bash
+npm install
+npm run dev
+```
+
+The app serves at `http://localhost:3000`.
+
+```bash
+npm run build    # production bundle in dist/
+npm run preview  # preview the production build
+npm run lint     # TypeScript check
+```
+
+## Contact form
+
+The enquiry form posts to [FormSubmit](https://formsubmit.co/) and delivers mail to the address in `src/data/site.ts`. The first submission to a new inbox may require a one-time confirmation email from FormSubmit.
+
+## Contact details
+
+Edit `src/data/site.ts` to change public email, phone, and WhatsApp. Leave `phoneDisplay`, `phoneTel`, and `whatsappDigits` empty to hide those channels.
+
+## Project layout
+
+- `src/App.tsx` — section order
+- `src/data/product.ts` — ERP copy
+- `src/data/site.ts` — studio contact and enquiry types
+- `src/components/` — page sections

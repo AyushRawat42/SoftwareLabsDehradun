@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" fill="#0F2D54"/>
+  <rect x="4" y="0" width="24" height="32" fill="#F1F3F5"/>
+  <text x="16" y="20" text-anchor="middle" font-family="system-ui, sans-serif" font-size="6" font-weight="800" fill="#0F2D54">SL</text>
+</svg>

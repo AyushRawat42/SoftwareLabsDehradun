@@ -36,8 +36,7 @@ export interface ProcessStep {
   deliverables: string[];
 }
 
-export interface Inquiry {
-  id: string;
+export interface ContactFormState {
   name: string;
   email: string;
   phone: string;
@@ -45,6 +44,5 @@ export interface Inquiry {
   projectType: string;
   timeline: string;
   message: string;
-  timestamp: string;
-  status: 'new' | 'contacted' | 'archived';
+  company: string;
 }

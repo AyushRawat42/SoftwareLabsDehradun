@@ -70,7 +70,7 @@ export default function Projects() {
             Recent Projects
           </h2>
           <p className="text-lg text-gray-600 font-sans leading-relaxed" id="projects-subheadline">
-            A few recent projects that show the kind of websites and software systems we build for businesses and institutions.
+            Live custom websites and platforms we have shipped for academies, colleges, and international clients. The Higher Education ERP above is the product platform; these case studies show how we deliver in production.
           </p>
         </div>
 

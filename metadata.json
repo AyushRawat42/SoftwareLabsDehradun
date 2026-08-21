@@ -1,6 +1,5 @@
 {
   "name": "Software Labs Dehradun",
-  "description": "Premium custom websites and software systems for local businesses, clinics, and academic institutes.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "description": "Higher Education ERP for Indian colleges and universities, plus custom websites and operational systems from Dehradun.",
+  "requestFramePermissions": []
 }
