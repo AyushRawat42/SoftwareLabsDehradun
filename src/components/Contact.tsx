@@ -59,7 +59,7 @@ export default function Contact() {
       projectType: formData.projectType,
       timeline: formData.timeline,
       message: formData.message,
-      _subject: `Software Labs enquiry: ${formData.projectType}`,
+      _subject: `Software Lab enquiry: ${formData.projectType}`,
       _template: 'table',
       _captcha: 'false',
     };

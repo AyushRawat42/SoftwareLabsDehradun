@@ -48,7 +48,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-lg text-gray-600 font-sans leading-relaxed max-w-2xl"
             >
-              Software Labs Higher Education ERP is a cloud campus platform for Indian colleges, autonomous institutes, and universities. We also design custom websites and operational systems for businesses that need something built around their workflow.
+              Software Lab Higher Education ERP is a cloud campus platform for Indian colleges, autonomous institutes, and universities. We also design custom websites and operational systems for businesses that need something built around their workflow.
             </motion.p>
 
             <motion.div
@@ -84,7 +84,7 @@ export default function Hero() {
               <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 text-gray-500 text-sm font-sans">
                 <div className="flex items-center gap-2 text-gray-800 font-medium">
                   <MapPin className="w-4 h-4 text-[#10A5B5]" />
-                  <span>{site.city}, India</span>
+                  <span>Across India</span>
                 </div>
                 <div className="h-1.5 w-1.5 rounded-full bg-gray-300 hidden sm:block" />
                 <p className="leading-snug">

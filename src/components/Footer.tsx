@@ -91,7 +91,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }: FooterProps) {
             </p>
             <div className="pt-2">
               <span className="text-[10px] font-mono font-bold text-[#10A5B5] uppercase bg-[#10A5B5]/10 px-2.5 py-1.5 rounded border border-[#10A5B5]/20 inline-block">
-                Studio based in {site.city}
+                Serving clients across India
               </span>
             </div>
           </div>

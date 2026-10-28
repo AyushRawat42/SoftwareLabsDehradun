@@ -51,10 +51,10 @@ export default function Logo({ className = '', showText = true, size = 'md' }: L
       {showText && (
         <div className="flex flex-col justify-center" id="logo-text-brand">
           <span className="font-display font-bold text-[#0F2D54] tracking-tight leading-none text-base md:text-lg">
-            Software Labs
+            Software Lab
           </span>
           <span className="font-sans text-[10px] font-bold text-[#10A5B5] uppercase tracking-widest leading-none mt-1">
-            Dehradun
+            India
           </span>
         </div>
       )}

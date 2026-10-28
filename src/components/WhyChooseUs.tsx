@@ -59,7 +59,7 @@ export default function WhyChooseUs() {
               Why Institutions and Businesses Work With Us
             </h2>
             <p className="text-gray-600 font-sans leading-relaxed text-base">
-              Software Labs Dehradun builds a campus ERP for Indian higher education and custom digital systems for organizations that need a precise operational fit.
+              Software Lab builds a campus ERP for Indian higher education and custom digital systems for organizations that need a precise operational fit.
             </p>
 
             <div className="bg-slate-50 border border-slate-100 rounded-lg p-6 space-y-4">

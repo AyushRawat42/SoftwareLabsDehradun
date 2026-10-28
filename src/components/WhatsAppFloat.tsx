@@ -7,7 +7,7 @@ import React from 'react';
 import { site } from '../data/site';
 
 const defaultMessage = encodeURIComponent(
-  'Hello Software Labs, I would like to know more about the Higher Education ERP.'
+  'Hello Software Lab, I would like to know more about the Higher Education ERP.'
 );
 
 export default function WhatsAppFloat() {

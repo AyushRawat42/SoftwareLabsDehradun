@@ -32,7 +32,7 @@ export default function Projects() {
       tag: 'Institutional Website',
       clientType: 'Medical & Paramedical College',
       accentColor: '#0F2D54', // deep navy
-      description: 'A live website for Sushila Institute of Medical Sciences (SIMS) in Dehradun, presenting the institute as a nursing and paramedical college. The site is positioned around institutional credibility, healthcare education, and student-facing information.',
+      description: 'A live website for Sushila Institute of Medical Sciences (SIMS), presenting the institute as a nursing and paramedical college. The site is positioned around institutional credibility, healthcare education, and student-facing information.',
       features: [
         'Comprehensive course catalogs & fee grids',
         'Institutional accreditation banners',

@@ -3,19 +3,18 @@
  */
 
 export const site = {
-  name: 'Software Labs Dehradun',
-  shortName: 'Software Labs',
-  legalName: 'Software Labs Dehradun',
-  city: 'Dehradun',
+  name: 'Software Lab',
+  shortName: 'Software Lab',
+  legalName: 'Software Lab',
   region: 'Uttarakhand, India',
-  locationLine: 'Dehradun, Uttarakhand, India',
+  locationLine: 'Uttarakhand, India',
   email: 'softwarelabdehradun@gmail.com',
   phoneDisplay: '+91 98708 71386',
   phoneTel: '+919870871386',
   whatsappDigits: '919870871386',
   hours: 'Monday–Saturday, 10:00 AM – 6:00 PM IST',
   replyWindow: 'We typically reply within one business day.',
-  productName: 'Software Labs Higher Education ERP',
+  productName: 'Software Lab Higher Education ERP',
   url: 'https://softwarelabs.dehradun',
 } as const;
 

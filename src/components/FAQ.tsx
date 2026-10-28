@@ -16,7 +16,7 @@ export default function FAQ() {
   const faqs: FAQItem[] = [
     {
       id: 'erp-what',
-      question: 'What is Software Labs Higher Education ERP?',
+      question: 'What is Software Lab Higher Education ERP?',
       answer: 'It is a unified, cloud-based campus platform for Indian colleges, autonomous institutes, and universities. Academics, finance, examinations, NAAC Binary evidence, and WhatsApp communication run in one system, designed around NEP 2020 rather than as add-ons to a generic SIS.',
     },
     {
@@ -57,7 +57,7 @@ export default function FAQ() {
     {
       id: 'location',
       question: 'Do you only work with local clients?',
-      answer: `We are based in ${site.city}, ${site.region}, and work with institutes and businesses across India as well as international clients (for example Sticky Cards in Canada). Reviews and updates run over email, scheduled video calls, and — when you prefer — WhatsApp.`,
+      answer: `We work with institutes and businesses across India as well as international clients (for example Sticky Cards in Canada). Reviews and updates run over email, scheduled video calls, and — when you prefer — WhatsApp.`,
     },
     {
       id: 'support',

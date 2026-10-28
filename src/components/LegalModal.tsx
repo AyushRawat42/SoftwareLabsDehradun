@@ -66,7 +66,7 @@ function PrivacyBody() {
     <>
       <p className="text-xs text-gray-500">Last updated: 21 August 2026</p>
       <p>
-        {site.name} (“we”, “us”) operates this brochure website and the Software Labs Higher Education ERP. This policy explains what personal data we collect through this site, why we collect it, and how we handle it under the Digital Personal Data Protection Act, 2023 (DPDPA).
+        {site.name} (“we”, “us”) operates this brochure website and the Software Lab Higher Education ERP. This policy explains what personal data we collect through this site, why we collect it, and how we handle it under the Digital Personal Data Protection Act, 2023 (DPDPA).
       </p>
       <h3 className="font-display font-bold text-gray-900 text-base">Who we are</h3>
       <p>
@@ -87,7 +87,7 @@ function PrivacyBody() {
       </p>
       <h3 className="font-display font-bold text-gray-900 text-base">Campus ERP data (product customers)</h3>
       <p>
-        Institutions that deploy Software Labs Higher Education ERP process student, parent, faculty, and financial records on infrastructure hosted in Indian cloud regions (AWS Mumbai). That processing is governed by a written customer agreement, encrypted audit logging, and DPDPA obligations as applicable to the institute (as data fiduciary) and to us (as data processor, where we act in that role). This brochure privacy notice does not replace that agreement.
+        Institutions that deploy Software Lab Higher Education ERP process student, parent, faculty, and financial records on infrastructure hosted in Indian cloud regions (AWS Mumbai). That processing is governed by a written customer agreement, encrypted audit logging, and DPDPA obligations as applicable to the institute (as data fiduciary) and to us (as data processor, where we act in that role). This brochure privacy notice does not replace that agreement.
       </p>
       <h3 className="font-display font-bold text-gray-900 text-base">Retention</h3>
       <p>
@@ -114,7 +114,7 @@ function TermsBody() {
       </p>
       <h3 className="font-display font-bold text-gray-900 text-base">The website</h3>
       <p>
-        Content on this site describes our flagship campus ERP and our custom software services. Product capabilities (including APAAR, ABC, DigiLocker/NAD, Tally Prime, Zoho Books, and WhatsApp Business API) are platform features of Software Labs Higher Education ERP. Integration scope for a given campus is confirmed in the implementation proposal after a demo.
+        Content on this site describes our flagship campus ERP and our custom software services. Product capabilities (including APAAR, ABC, DigiLocker/NAD, Tally Prime, Zoho Books, and WhatsApp Business API) are platform features of Software Lab Higher Education ERP. Integration scope for a given campus is confirmed in the implementation proposal after a demo.
       </p>
       <h3 className="font-display font-bold text-gray-900 text-base">No public pricing for the ERP</h3>
       <p>
@@ -122,7 +122,7 @@ function TermsBody() {
       </p>
       <h3 className="font-display font-bold text-gray-900 text-base">Intellectual property</h3>
       <p>
-        The Software Labs name, logo, and this website’s design are our property. Live client websites linked from the Projects section remain the property of those clients. Custom code we build for a client is owned as stated in that client’s agreement.
+        The Software Lab name, logo, and this website’s design are our property. Live client websites linked from the Projects section remain the property of those clients. Custom code we build for a client is owned as stated in that client’s agreement.
       </p>
       <h3 className="font-display font-bold text-gray-900 text-base">Acceptable use</h3>
       <p>

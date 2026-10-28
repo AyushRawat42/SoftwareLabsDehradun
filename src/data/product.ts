@@ -21,10 +21,10 @@ export interface ProductIntegration {
 
 export const product = {
   eyebrow: 'Flagship Product',
-  name: 'Software Labs Higher Education ERP',
+  name: 'Software Lab Higher Education ERP',
   tagline: 'Next-Generation, Cloud-Native Campus Management & Accreditation Platform',
   intro:
-    'Software Labs ERP is a unified, cloud-based institutional operating system purpose-built for Indian colleges, autonomous institutes, and universities. Designed around the National Education Policy (NEP 2020) and NAAC Binary Accreditation framework, the platform eliminates fragmented legacy systems by connecting academics, finance, examinations, compliance, and communication into a single, high-performance ecosystem.',
+    'Software Lab ERP is a unified, cloud-based institutional operating system purpose-built for Indian colleges, autonomous institutes, and universities. Designed around the National Education Policy (NEP 2020) and NAAC Binary Accreditation framework, the platform eliminates fragmented legacy systems by connecting academics, finance, examinations, compliance, and communication into a single, high-performance ecosystem.',
   audiences: [
     {
       id: 'colleges',
@@ -179,7 +179,7 @@ export const product = {
     { name: 'WhatsApp Business API', detail: 'Receipts, alerts, circulars' },
   ] satisfies ProductIntegration[],
   deployment: {
-    title: 'The Software Labs Deployment Advantage',
+    title: 'The Software Lab Deployment Advantage',
     items: [
       {
         heading: '30-Day Onboarding',

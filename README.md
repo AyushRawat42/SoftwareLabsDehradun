@@ -1,12 +1,12 @@
-# Software Labs Dehradun
+# Software Lab
 
-Marketing brochure for **Software Labs Dehradun**: the Higher Education ERP for Indian colleges, autonomous institutes, and universities, plus custom websites and operational systems.
+Marketing brochure for **Software Lab**: the Higher Education ERP for Indian colleges, autonomous institutes, and universities, plus custom websites and operational systems.
 
 Built with React 19, TypeScript, Vite 6, Tailwind CSS v4, Motion, and Lucide icons. All copy lives in the React components and `src/data/` files. There is no CMS or application backend.
 
 ## Product
 
-Software Labs Higher Education ERP is a cloud-native campus platform designed around NEP 2020 and NAAC Binary Accreditation: academics and credits, accreditation evidence, fees and Indian payment rails, examinations and attendance, and WhatsApp-first communication.
+Software Lab Higher Education ERP is a cloud-native campus platform designed around NEP 2020 and NAAC Binary Accreditation: academics and credits, accreditation evidence, fees and Indian payment rails, examinations and attendance, and WhatsApp-first communication.
 
 ## Run locally
 
