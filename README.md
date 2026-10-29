@@ -1,41 +1,37 @@
-# Software Lab
+# The Software Lab
 
-Marketing brochure for **Software Lab**: the Higher Education ERP for Indian colleges, autonomous institutes, and universities, plus custom websites and operational systems.
+The Software Lab is a Dehradun-based software engineering and digital growth company serving institutions and businesses across India.
 
-Built with React 19, TypeScript, Vite 6, Tailwind CSS v4, Motion, and Lucide icons. All copy lives in the React components and `src/data/` files. There is no CMS or application backend.
-
-## Product
-
-Software Lab Higher Education ERP is a cloud-native campus platform designed around NEP 2020 and NAAC Binary Accreditation: academics and credits, accreditation evidence, fees and Indian payment rails, examinations and attendance, and WhatsApp-first communication.
+The site is being migrated from a Vite single-page React app to Next.js App Router, TypeScript and Tailwind CSS. The legacy implementation remains in `src/` as a reference while route content is moved into `app/`.
 
 ## Run locally
 
 **Prerequisites:** Node.js 20+
 
 ```bash
-npm install
-npm run dev
+pnpm install
+pnpm dev
 ```
 
 The app serves at `http://localhost:3000`.
 
 ```bash
-npm run build    # production bundle in dist/
-npm run preview  # preview the production build
-npm run lint     # TypeScript check
+pnpm build   # production build
+pnpm start   # serve the production build
+pnpm lint    # TypeScript check
 ```
 
-## Contact form
+## App Router layout
 
-The enquiry form posts to [FormSubmit](https://formsubmit.co/) and delivers mail to the address in `src/data/site.ts`. The first submission to a new inbox may require a one-time confirmation email from FormSubmit.
+- `app/layout.tsx` — global layout, navigation, footer and business schema
+- `app/page.tsx` — homepage
+- `app/sitemap.ts` and `app/robots.ts` — generated search-crawler endpoints
+- `components/` — shared navigation, footer, JSON-LD and audit CTA components
+- `lib/seo-config.ts` — canonical host, metadata helper and route SEO data
+- `src/` — original Vite implementation retained as a migration reference
 
-## Contact details
+The sitemap's blog slugs are registered in `lib/seo-config.ts`; keep them aligned with published blog content.
 
-Edit `src/data/site.ts` to change public email, phone, and WhatsApp. Leave `phoneDisplay`, `phoneTel`, and `whatsappDigits` empty to hide those channels.
+## Business details
 
-## Project layout
-
-- `src/App.tsx` — section order
-- `src/data/product.ts` — ERP copy
-- `src/data/site.ts` — studio contact and enquiry types
-- `src/components/` — page sections
+Public business details are used in the footer and structured data. Update the address and contact information in `components/Footer.tsx`, `components/JsonLd.tsx` and `components/FloatingAuditCta.tsx` together if they change.
