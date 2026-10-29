@@ -24,7 +24,7 @@ export default function Footer() {
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
             <Link href="/" className="inline-flex items-center gap-3" aria-label="The Software Lab home">
-              <BrandLogo tone="dark" subtitle="" />
+              <BrandLogo />
             </Link>
             <p className="max-w-sm text-sm leading-6 text-slate-400">
               Web development, custom software and measurable digital growth for institutions and businesses.
