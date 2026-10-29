@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Mail, MapPin, Phone } from 'lucide-react';
+import BrandLogo from '@/components/BrandLogo';
 
 const serviceLinks = [
   { href: '/services/web-development', label: 'Website & Web App Development' },
@@ -23,10 +24,7 @@ export default function Footer() {
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
             <Link href="/" className="inline-flex items-center gap-3" aria-label="The Software Lab home">
-              <span className="grid size-10 place-items-center rounded-md bg-[#10A5B5] text-xs font-extrabold text-[#0A1729]">
-                SL
-              </span>
-              <span className="font-display text-lg font-bold">The Software Lab</span>
+              <BrandLogo tone="dark" subtitle="" />
             </Link>
             <p className="max-w-sm text-sm leading-6 text-slate-400">
               Web development, custom software and measurable digital growth for institutions and businesses.

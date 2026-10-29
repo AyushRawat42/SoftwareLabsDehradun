@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
+import BrandLogo from '@/components/BrandLogo';
 
 const serviceLinks = [
   { href: '/services/web-development', label: 'Website & Web App Development' },
@@ -37,17 +38,7 @@ export default function Navbar() {
           aria-label="The Software Lab home"
           onClick={closeMenu}
         >
-          <span className="grid size-10 place-items-center rounded-md bg-[#0F2D54] text-xs font-extrabold tracking-tight text-white">
-            SL
-          </span>
-          <span className="leading-tight">
-            <span className="block font-display text-base font-bold tracking-tight text-[#0F2D54] sm:text-lg">
-              The Software Lab
-            </span>
-            <span className="block text-[10px] font-bold uppercase tracking-[0.18em] text-[#10A5B5]">
-              Dehradun · India
-            </span>
-          </span>
+          <BrandLogo />
         </Link>
 
         <button

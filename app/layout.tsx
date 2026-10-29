@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import type { ReactNode } from 'react';
+import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
 import Footer from '@/components/Footer';
 import FloatingAuditCta from '@/components/FloatingAuditCta';
 import { JsonLd, localBusinessStructuredData } from '@/components/JsonLd';
@@ -26,14 +27,6 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
   return (
     <html lang="en-IN">
       <head>
-        <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-N4BKNLMC" />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());`,
-          }}
-        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
@@ -42,6 +35,8 @@ gtag('js', new Date());`,
         />
       </head>
       <body className="min-h-screen antialiased">
+        <GoogleTagManager gtmId="GTM-N4BKNLMC" />
+        <GoogleAnalytics gaId="G-BL1KYN0QHC" />
         <JsonLd data={localBusinessStructuredData} />
         <Navbar />
         {children}
