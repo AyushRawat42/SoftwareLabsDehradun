@@ -71,148 +71,127 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 2. 3-CARD SERVICE OVERVIEW WITH CASE STUDY PROOFS */}
+      {/* 2. WHAT WE DO */}
       <section
-        aria-label="Core Services Overview"
-        className="home-scroll-reveal my-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+        aria-labelledby="what-we-do-heading"
+        className="home-scroll-reveal my-6 border-y border-gray-200 bg-white py-4 sm:py-5"
       >
-        {/* Service 1: Web Development (Featuring SIMS College) */}
-        <div className="group flex flex-col justify-between rounded-xl border border-slate-200 bg-white p-4 shadow-xs transition-all duration-300 ease-out hover:-translate-y-1.5 hover:border-[#DC2626] hover:shadow-[0_8px_24px_rgba(220,38,38,0.14)] motion-reduce:transition-none sm:p-5">
-          <div>
-            <div className="mb-3 flex size-9 items-center justify-center rounded-lg bg-slate-100 text-[#10A5B5] group-hover:bg-[#10A5B5]/10">
-              <Globe className="size-5" />
+        <div className="mb-2 px-1">
+          <h2
+            id="what-we-do-heading"
+            className="font-display text-lg font-bold text-gray-900 sm:text-xl"
+          >
+            What We Do
+          </h2>
+        </div>
+
+        <article className="group grid gap-3 border-b border-gray-200 px-1 py-4 transition-colors duration-200 hover:bg-gray-50 sm:grid-cols-[minmax(0,1fr)_minmax(220px,0.65fr)] sm:items-center sm:gap-6">
+          <div className="min-w-0">
+            <div className="flex flex-wrap items-center gap-2">
+              <Globe aria-hidden="true" className="size-4 shrink-0 text-[#B5121B]" />
+              <h3 className="font-display text-sm font-bold text-gray-900 sm:text-base">
+                Website &amp; Web App Development
+              </h3>
+              <span className="rounded-full border border-gray-200 bg-gray-100 px-3 py-1 text-xs text-gray-800">Next.js 15</span>
+              <span className="rounded-full border border-gray-200 bg-gray-100 px-3 py-1 text-xs text-gray-800">Core Web Vitals</span>
             </div>
-            <h2 className="font-display text-base font-bold text-[#0F2D54] sm:text-lg">
-              Website &amp; Web App Development
-            </h2>
-            <p className="mt-1.5 text-xs leading-relaxed text-slate-600 sm:text-sm">
+            <p className="mt-1 text-xs leading-relaxed text-gray-600 sm:text-sm">
               Sub-second page speeds, clean Next.js architecture, and mobile-first responsive corporate and institutional portals.
             </p>
-
-            {/* Proof Card: SIMS College Case Study */}
-            <div className="mt-3 flex items-center gap-2 rounded-lg border border-slate-100 bg-slate-50 p-2">
-              <div className="relative h-10 w-14 shrink-0 overflow-hidden rounded border border-slate-200 bg-white">
-                <Image
-                  src="/images/sims/sims-stack-performance.webp"
-                  alt="SIMS College 98/100 PageSpeed"
-                  width={785}
-                  height={616}
-                  sizes="56px"
-                  className="h-full w-full object-contain"
-                />
-              </div>
-              <div className="min-w-0 flex-1">
-                <p className="truncate text-[11px] font-semibold text-[#0F2D54]">SIMS College Case Study</p>
-                <p className="text-[10px] font-medium text-emerald-600">98/100 PageSpeed · 24/7 Admissions</p>
-              </div>
-            </div>
           </div>
+          <Link
+            href="/work"
+            className="group/case inline-flex min-w-0 items-center gap-3 rounded-lg py-1 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B5121B]"
+          >
+            <span className="relative size-12 shrink-0 overflow-hidden rounded-md border border-gray-200 bg-gray-50">
+              <Image
+                src="/images/sims/sims-stack-performance.webp"
+                alt="SIMS College website performance case study"
+                width={785}
+                height={616}
+                sizes="48px"
+                className="h-full w-full object-contain"
+              />
+            </span>
+            <span className="min-w-0 flex-1">
+              <span className="block truncate text-xs font-semibold text-gray-900">SIMS College Case Study</span>
+              <span className="block text-[11px] text-gray-600">98/100 PageSpeed · 24/7 Admissions</span>
+            </span>
+            <span aria-hidden="true" className="shrink-0 text-lg text-[#B5121B] transition-transform duration-200 group-hover/case:translate-x-1">→</span>
+          </Link>
+        </article>
 
-          <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-            <div className="flex flex-wrap gap-1">
-              <span className="rounded bg-slate-100 px-2 py-0.5 text-[11px] font-medium text-slate-600 transition-colors duration-300 hover:bg-rose-50 hover:text-rose-700">Next.js 15</span>
-              <span className="rounded bg-slate-100 px-2 py-0.5 text-[11px] font-medium text-slate-600 transition-colors duration-300 hover:bg-rose-50 hover:text-rose-700">Core Web Vitals</span>
+        <article className="group grid gap-3 border-b border-gray-200 px-1 py-4 transition-colors duration-200 hover:bg-gray-50 sm:grid-cols-[minmax(0,1fr)_minmax(220px,0.65fr)] sm:items-center sm:gap-6">
+          <div className="min-w-0">
+            <div className="flex flex-wrap items-center gap-2">
+              <Layers aria-hidden="true" className="size-4 shrink-0 text-[#B5121B]" />
+              <h3 className="font-display text-sm font-bold text-gray-900 sm:text-base">
+                Custom Software &amp; Campus ERP
+              </h3>
+              <span className="rounded-full border border-gray-200 bg-gray-100 px-3 py-1 text-xs text-gray-800">School Portals</span>
+              <span className="rounded-full border border-gray-200 bg-gray-100 px-3 py-1 text-xs text-gray-800">Higher Ed ERP</span>
             </div>
-            <Link
-              href="/work"
-              className="inline-flex items-center gap-1 text-xs font-semibold text-[#0F2D54] group-hover:text-[#10A5B5]"
-            >
-              Case Tour <ArrowRight className="size-3.5" />
-            </Link>
-          </div>
-        </div>
-
-        {/* Service 2: Custom Software & ERP (Featuring College & School Portals) */}
-        <div className="group flex flex-col justify-between rounded-xl border border-slate-200 bg-white p-4 shadow-xs transition-all duration-300 ease-out hover:-translate-y-1.5 hover:border-[#DC2626] hover:shadow-[0_8px_24px_rgba(220,38,38,0.14)] motion-reduce:transition-none sm:p-5">
-          <div>
-            <div className="mb-3 flex size-9 items-center justify-center rounded-lg bg-slate-100 text-[#10A5B5] group-hover:bg-[#10A5B5]/10">
-              <Layers className="size-5" />
-            </div>
-            <h2 className="font-display text-base font-bold text-[#0F2D54] sm:text-lg">
-              Custom Software &amp; Campus ERP
-            </h2>
-            <p className="mt-1.5 text-xs leading-relaxed text-slate-600 sm:text-sm">
+            <p className="mt-1 text-xs leading-relaxed text-gray-600 sm:text-sm">
               College portals, school parent-student apps, NEP 2020 credit allocation, APAAR/ABC mobility, and NAAC Binary compliance.
             </p>
-
-            {/* Proof Card: College & School Systems */}
-            <div className="mt-3 flex items-center gap-2 rounded-lg border border-slate-100 bg-slate-50 p-2">
-              <div className="relative h-10 w-14 shrink-0 overflow-hidden rounded border border-slate-200 bg-white">
-                <Image
-                  src="/images/college-portal/college-conversion-ui.webp"
-                  alt="College & University Campus Portals"
-                  width={774}
-                  height={616}
-                  sizes="56px"
-                  className="h-full w-full object-contain"
-                />
-              </div>
-              <div className="min-w-0 flex-1">
-                <p className="truncate text-[11px] font-semibold text-[#0F2D54]">College &amp; Campus Portals</p>
-                <p className="text-[10px] font-medium text-[#10A5B5]">NEP 2020 · Course Grids · ERP</p>
-              </div>
-            </div>
           </div>
+          <Link
+            href="/work"
+            className="group/case inline-flex min-w-0 items-center gap-3 rounded-lg py-1 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B5121B]"
+          >
+            <span className="relative size-12 shrink-0 overflow-hidden rounded-md border border-gray-200 bg-gray-50">
+              <Image
+                src="/images/college-portal/college-conversion-ui.webp"
+                alt="College and university campus portals case study"
+                width={774}
+                height={616}
+                sizes="48px"
+                className="h-full w-full object-contain"
+              />
+            </span>
+            <span className="min-w-0 flex-1">
+              <span className="block truncate text-xs font-semibold text-gray-900">College &amp; Campus Portals</span>
+              <span className="block text-[11px] text-gray-600">NEP 2020 · Course Grids · ERP</span>
+            </span>
+            <span aria-hidden="true" className="shrink-0 text-lg text-[#B5121B] transition-transform duration-200 group-hover/case:translate-x-1">→</span>
+          </Link>
+        </article>
 
-          <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-            <div className="flex flex-wrap gap-1">
-              <span className="rounded bg-slate-100 px-2 py-0.5 text-[11px] font-medium text-slate-600 transition-colors duration-300 hover:bg-rose-50 hover:text-rose-700">School Portals</span>
-              <span className="rounded bg-slate-100 px-2 py-0.5 text-[11px] font-medium text-slate-600 transition-colors duration-300 hover:bg-rose-50 hover:text-rose-700">Higher Ed ERP</span>
+        <article className="group grid gap-3 px-1 py-4 transition-colors duration-200 hover:bg-gray-50 sm:grid-cols-[minmax(0,1fr)_minmax(220px,0.65fr)] sm:items-center sm:gap-6">
+          <div className="min-w-0">
+            <div className="flex flex-wrap items-center gap-2">
+              <TrendingUp aria-hidden="true" className="size-4 shrink-0 text-[#B5121B]" />
+              <h3 className="font-display text-sm font-bold text-gray-900 sm:text-base">
+                Technical SEO &amp; Google Ads
+              </h3>
+              <span className="rounded-full border border-gray-200 bg-gray-100 px-3 py-1 text-xs text-gray-800">Local SEO</span>
+              <span className="rounded-full border border-gray-200 bg-gray-100 px-3 py-1 text-xs text-gray-800">GA4 &amp; GTM</span>
             </div>
-            <Link
-              href="/work"
-              className="inline-flex items-center gap-1 text-xs font-semibold text-[#0F2D54] group-hover:text-[#10A5B5]"
-            >
-              Case Tour <ArrowRight className="size-3.5" />
-            </Link>
-          </div>
-        </div>
-
-        {/* Service 3: Technical SEO & Growth (Featuring Aspire Academy) */}
-        <div className="group flex flex-col justify-between rounded-xl border border-slate-200 bg-white p-4 shadow-xs transition-all duration-300 ease-out hover:-translate-y-1.5 hover:border-[#DC2626] hover:shadow-[0_8px_24px_rgba(220,38,38,0.14)] motion-reduce:transition-none sm:col-span-2 sm:p-5 lg:col-span-1">
-          <div>
-            <div className="mb-3 flex size-9 items-center justify-center rounded-lg bg-slate-100 text-[#10A5B5] group-hover:bg-[#10A5B5]/10">
-              <TrendingUp className="size-5" />
-            </div>
-            <h2 className="font-display text-base font-bold text-[#0F2D54] sm:text-lg">
-              Technical SEO &amp; Google Ads
-            </h2>
-            <p className="mt-1.5 text-xs leading-relaxed text-slate-600 sm:text-sm">
+            <p className="mt-1 text-xs leading-relaxed text-gray-600 sm:text-sm">
               Qualified student inquiry acquisition through high-intent search optimization, Performance Max campaigns, and full-funnel GA4 tracking.
             </p>
-
-            {/* Proof Card: Aspire Academy Lead Routing & 97/100 Speed */}
-            <div className="mt-3 flex items-center gap-2 rounded-lg border border-slate-100 bg-slate-50 p-2">
-              <div className="relative h-10 w-14 shrink-0 overflow-hidden rounded border border-slate-200 bg-white">
-                <Image
-                  src="/images/aspire/aspire-mobile-registration.webp"
-                  alt="Aspire Academy 97/100 Mobile Speed & Lead Routing"
-                  width={793}
-                  height={552}
-                  sizes="56px"
-                  className="h-full w-full object-contain"
-                />
-              </div>
-              <div className="min-w-0 flex-1">
-                <p className="truncate text-[11px] font-semibold text-[#0F2D54]">Aspire Academy Case Study</p>
-                <p className="text-[10px] font-medium text-amber-700">97/100 Speed · Counseling Lead Flow</p>
-              </div>
-            </div>
           </div>
-
-          <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-            <div className="flex flex-wrap gap-1">
-              <span className="rounded bg-slate-100 px-2 py-0.5 text-[11px] font-medium text-slate-600 transition-colors duration-300 hover:bg-rose-50 hover:text-rose-700">Local SEO</span>
-              <span className="rounded bg-slate-100 px-2 py-0.5 text-[11px] font-medium text-slate-600 transition-colors duration-300 hover:bg-rose-50 hover:text-rose-700">GA4 &amp; GTM</span>
-            </div>
-            <Link
-              href="/work"
-              className="inline-flex items-center gap-1 text-xs font-semibold text-[#0F2D54] group-hover:text-[#10A5B5]"
-            >
-              Case Tour <ArrowRight className="size-3.5" />
-            </Link>
-          </div>
-        </div>
+          <Link
+            href="/work"
+            className="group/case inline-flex min-w-0 items-center gap-3 rounded-lg py-1 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B5121B]"
+          >
+            <span className="relative size-12 shrink-0 overflow-hidden rounded-md border border-gray-200 bg-gray-50">
+              <Image
+                src="/images/aspire/aspire-mobile-registration.webp"
+                alt="Aspire Academy mobile registration and lead flow case study"
+                width={793}
+                height={552}
+                sizes="48px"
+                className="h-full w-full object-contain"
+              />
+            </span>
+            <span className="min-w-0 flex-1">
+              <span className="block truncate text-xs font-semibold text-gray-900">Aspire Academy Case Study</span>
+              <span className="block text-[11px] text-gray-600">97/100 Speed · Counseling Lead Flow</span>
+            </span>
+            <span aria-hidden="true" className="shrink-0 text-lg text-[#B5121B] transition-transform duration-200 group-hover/case:translate-x-1">→</span>
+          </Link>
+        </article>
       </section>
 
       {/* 3. CALL-TO-ACTION SECTION */}
