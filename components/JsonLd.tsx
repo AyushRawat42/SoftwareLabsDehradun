@@ -30,7 +30,7 @@ export const localBusinessStructuredData: JsonLdValue = {
       '@id': `${SITE_URL}/#localbusiness`,
       name: SITE_NAME,
       url: SITE_URL,
-      image: `${SITE_URL}/og-image.png`,
+      image: `${SITE_URL}/opengraph-image`,
       email: 'softwarelabdehradun@gmail.com',
       telephone: '+919870871386',
       priceRange: 'Custom project pricing',

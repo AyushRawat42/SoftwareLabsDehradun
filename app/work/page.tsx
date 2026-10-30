@@ -74,13 +74,14 @@ export default function WorkPage() {
               </div>
 
               {/* Visual Thumbnail */}
-              <div className="relative mb-2.5 h-24 w-full overflow-hidden rounded-lg bg-slate-50 border border-slate-100">
+              <div className="relative mb-2.5 aspect-[4/3] w-full overflow-hidden rounded-lg border border-slate-100 bg-slate-50">
                 <Image
-                  src="/images/college-portal/college-conversion-ui.png"
+                  src="/images/college-portal/college-conversion-ui.webp"
                   alt="College & University portal course pathways and quick-apply modal"
-                  fill
+                  width={774}
+                  height={616}
                   sizes="(max-width: 768px) 100vw, 25vw"
-                  className="object-cover object-top"
+                  className="h-full w-full object-contain"
                 />
               </div>
 
@@ -112,13 +113,14 @@ export default function WorkPage() {
               </div>
 
               {/* Visual Thumbnail */}
-              <div className="relative mb-2.5 h-24 w-full overflow-hidden rounded-lg bg-slate-50 border border-slate-100">
+              <div className="relative mb-2.5 aspect-[4/3] w-full overflow-hidden rounded-lg border border-slate-100 bg-slate-50">
                 <Image
-                  src="/images/parent-portal/daily-engagement-mobile.png"
+                  src="/images/parent-portal/daily-engagement-mobile.webp"
                   alt="Daily Engagement & Attendance mobile preview"
-                  fill
+                  width={798}
+                  height={621}
                   sizes="(max-width: 768px) 100vw, 25vw"
-                  className="object-cover object-top"
+                  className="h-full w-full object-contain"
                 />
               </div>
 
@@ -155,13 +157,14 @@ export default function WorkPage() {
               </div>
 
               {/* Visual Thumbnail */}
-              <div className="relative mb-2.5 h-24 w-full overflow-hidden rounded-lg bg-slate-50 border border-slate-100">
+              <div className="relative mb-2.5 aspect-[4/3] w-full overflow-hidden rounded-lg border border-slate-100 bg-slate-50">
                 <Image
-                  src="/images/sims/sims-case-study-hero.png"
+                  src="/images/sims/sims-case-study-hero.webp"
                   alt="SIMS College web app and admissions growth engine preview"
-                  fill
+                  width={795}
+                  height={645}
                   sizes="(max-width: 768px) 100vw, 25vw"
-                  className="object-cover object-top"
+                  className="h-full w-full object-contain"
                 />
               </div>
 
@@ -198,13 +201,14 @@ export default function WorkPage() {
               </div>
 
               {/* Visual Thumbnail */}
-              <div className="relative mb-2.5 h-24 w-full overflow-hidden rounded-lg bg-slate-50 border border-slate-100">
+              <div className="relative mb-2.5 aspect-[4/3] w-full overflow-hidden rounded-lg border border-slate-100 bg-slate-50">
                 <Image
-                  src="/images/aspire/aspire-case-study-hero.png"
+                  src="/images/aspire/aspire-case-study-hero.webp"
                   alt="Aspire Academy web app and admissions portal preview"
-                  fill
+                  width={778}
+                  height={702}
                   sizes="(max-width: 768px) 100vw, 25vw"
-                  className="object-cover object-top"
+                  className="h-full w-full object-contain"
                 />
               </div>
 

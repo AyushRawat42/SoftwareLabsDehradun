@@ -6,22 +6,30 @@ import { ChevronLeft, ChevronRight, Eye, X } from 'lucide-react';
 
 const aspireScreenshots = [
   {
-    src: '/images/aspire/aspire-case-study-hero.png',
+    src: '/images/aspire/aspire-case-study-hero.webp',
+    width: 778,
+    height: 702,
     title: 'Built for Aspirants: Web App + Admissions',
     subtitle: 'High-converting sports coaching & defence academy portal engineered for Aspire Sports & Defence Academy.',
   },
   {
-    src: '/images/aspire/aspire-mobile-registration.png',
+    src: '/images/aspire/aspire-mobile-registration.webp',
+    width: 793,
+    height: 552,
     title: 'Frictionless Mobile Registration (97/100 PageSpeed)',
     subtitle: '30-second demo class booking, 97/100 mobile speed, and instant lead routing to the counseling desk via GTM/GA4.',
   },
   {
-    src: '/images/aspire/aspire-program-batches.png',
+    src: '/images/aspire/aspire-program-batches.webp',
+    width: 794,
+    height: 542,
     title: 'Program & Batch Architecture',
     subtitle: 'Clear course pathways for NDA written coaching, SSB interview prep, and physical conditioning facilities.',
   },
   {
-    src: '/images/aspire/aspire-challenge-mobile.png',
+    src: '/images/aspire/aspire-challenge-mobile.webp',
+    width: 787,
+    height: 691,
     title: 'The Challenge: Engaging Action-Oriented Users',
     subtitle: 'Replaced static PDF brochures with interactive schedules, ground facility tours, and high-speed mobile UX.',
   },
@@ -89,9 +97,10 @@ export default function AspireScreenshotsModal() {
               <Image
                 src={aspireScreenshots[currentIndex].src}
                 alt={aspireScreenshots[currentIndex].title}
-                fill
+                width={aspireScreenshots[currentIndex].width}
+                height={aspireScreenshots[currentIndex].height}
                 sizes="(max-width: 768px) 100vw, 768px"
-                className="object-contain p-2"
+                className="h-full w-full object-contain p-2"
               />
 
               <button

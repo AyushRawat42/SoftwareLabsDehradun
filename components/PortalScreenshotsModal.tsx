@@ -6,22 +6,30 @@ import { ChevronLeft, ChevronRight, Eye, X } from 'lucide-react';
 
 const screenshots = [
   {
-    src: '/images/parent-portal/daily-engagement-mobile.png',
+    src: '/images/parent-portal/daily-engagement-mobile.webp',
+    width: 798,
+    height: 621,
     title: 'Daily Engagement & Operations',
     subtitle: 'Daily attendance tracking, homework attachments, and school circulars replacing noisy WhatsApp groups.',
   },
   {
-    src: '/images/parent-portal/fees-report-cards.png',
+    src: '/images/parent-portal/fees-report-cards.webp',
+    width: 791,
+    height: 566,
     title: 'Fees & Report Cards Simplified',
     subtitle: 'Automated term fee ledgers, transport fee tracking, and downloadable PDF academic report cards.',
   },
   {
-    src: '/images/parent-portal/school-portal-hero.png',
+    src: '/images/parent-portal/school-portal-hero.webp',
+    width: 733,
+    height: 652,
     title: 'Beyond WhatsApp Groups',
     subtitle: 'A unified mobile-first ecosystem purpose-built for K-12 schools, teachers, and parents.',
   },
   {
-    src: '/images/parent-portal/higher-ed-vs-k12.png',
+    src: '/images/parent-portal/higher-ed-vs-k12.webp',
+    width: 796,
+    height: 599,
     title: 'Higher Ed vs. K-12 Needs Architecture',
     subtitle: 'Tailored institutional workflows separating parent-first K-12 needs from self-directed higher education.',
   },
@@ -89,9 +97,10 @@ export default function PortalScreenshotsModal() {
               <Image
                 src={screenshots[currentIndex].src}
                 alt={screenshots[currentIndex].title}
-                fill
+                width={screenshots[currentIndex].width}
+                height={screenshots[currentIndex].height}
                 sizes="(max-width: 768px) 100vw, 768px"
-                className="object-contain p-2"
+                className="h-full w-full object-contain p-2"
               />
 
               <button

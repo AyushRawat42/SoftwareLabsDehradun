@@ -46,13 +46,14 @@ export default function HomePage() {
           {/* Right Featured Spotlight (5 cols on lg, compact card on sm/md) */}
           <div className="lg:col-span-5">
             <div className="group relative overflow-hidden rounded-xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-3 shadow-xs transition-all hover:border-[#10A5B5]/60 hover:shadow-md">
-              <div className="relative h-32 w-full overflow-hidden rounded-lg bg-slate-100 sm:h-40">
+              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg bg-slate-100">
                 <Image
-                  src="/images/parent-portal/school-portal-hero.png"
+                  src="/images/parent-portal/school-portal-hero.webp"
                   alt="A Modern Portal for K-12 Schools & Parents - Beyond WhatsApp Groups"
-                  fill
+                  width={733}
+                  height={652}
                   sizes="(max-width: 1024px) 100vw, 42vw"
-                  className="object-cover object-center transition-transform duration-300 group-hover:scale-102"
+                  className="h-full w-full object-contain transition-transform duration-300 group-hover:scale-102"
                   priority
                 />
               </div>
@@ -99,11 +100,12 @@ export default function HomePage() {
             <div className="mt-3 flex items-center gap-2 rounded-lg border border-slate-100 bg-slate-50 p-2">
               <div className="relative h-10 w-14 shrink-0 overflow-hidden rounded border border-slate-200 bg-white">
                 <Image
-                  src="/images/sims/sims-stack-performance.png"
+                  src="/images/sims/sims-stack-performance.webp"
                   alt="SIMS College 98/100 PageSpeed"
-                  fill
+                  width={785}
+                  height={616}
                   sizes="56px"
-                  className="object-cover object-left"
+                  className="h-full w-full object-contain"
                 />
               </div>
               <div className="min-w-0 flex-1">
@@ -144,11 +146,12 @@ export default function HomePage() {
             <div className="mt-3 flex items-center gap-2 rounded-lg border border-slate-100 bg-slate-50 p-2">
               <div className="relative h-10 w-14 shrink-0 overflow-hidden rounded border border-slate-200 bg-white">
                 <Image
-                  src="/images/college-portal/college-conversion-ui.png"
+                  src="/images/college-portal/college-conversion-ui.webp"
                   alt="College & University Campus Portals"
-                  fill
+                  width={774}
+                  height={616}
                   sizes="56px"
-                  className="object-cover object-left"
+                  className="h-full w-full object-contain"
                 />
               </div>
               <div className="min-w-0 flex-1">
@@ -189,11 +192,12 @@ export default function HomePage() {
             <div className="mt-3 flex items-center gap-2 rounded-lg border border-slate-100 bg-slate-50 p-2">
               <div className="relative h-10 w-14 shrink-0 overflow-hidden rounded border border-slate-200 bg-white">
                 <Image
-                  src="/images/aspire/aspire-mobile-registration.png"
+                  src="/images/aspire/aspire-mobile-registration.webp"
                   alt="Aspire Academy 97/100 Mobile Speed & Lead Routing"
-                  fill
+                  width={793}
+                  height={552}
                   sizes="56px"
-                  className="object-cover object-left"
+                  className="h-full w-full object-contain"
                 />
               </div>
               <div className="min-w-0 flex-1">

@@ -6,27 +6,37 @@ import { ChevronLeft, ChevronRight, Eye, X } from 'lucide-react';
 
 const simsScreenshots = [
   {
-    src: '/images/sims/sims-case-study-hero.png',
+    src: '/images/sims/sims-case-study-hero.webp',
+    width: 795,
+    height: 645,
     title: 'Modernizing Admissions for Higher Education',
     subtitle: 'Next.js web application and growth engine deployed for Sushila Institute of Medical Sciences (SIMS).',
   },
   {
-    src: '/images/sims/sims-stack-performance.png',
+    src: '/images/sims/sims-stack-performance.webp',
+    width: 785,
+    height: 616,
     title: 'The Stack & Performance (98/100 PageSpeed)',
     subtitle: 'Engineered with Next.js, Tailwind CSS, GA4/GTM conversion tracking, and high-performance technical SEO.',
   },
   {
-    src: '/images/sims/sims-conversion-ui.png',
+    src: '/images/sims/sims-conversion-ui.webp',
+    width: 774,
+    height: 616,
     title: 'Conversion-Focused UI/UX Pathways',
     subtitle: 'Interactive nursing & paramedical course grids with instant 30-second quick-apply inquiry modals.',
   },
   {
-    src: '/images/sims/sims-mobile-dropoff-challenge.png',
+    src: '/images/sims/sims-mobile-dropoff-challenge.webp',
+    width: 761,
+    height: 594,
     title: 'The Challenge: Overcoming Mobile Drop-Off',
     subtitle: 'Eliminated bloated layout clutter and friction-heavy PDF forms to retain 50%+ more mobile student traffic.',
   },
   {
-    src: '/images/sims/sims-admissions-engine-cta.png',
+    src: '/images/sims/sims-admissions-engine-cta.webp',
+    width: 800,
+    height: 582,
     title: '24/7 Digital Admissions Engine',
     subtitle: 'Transforming institutional websites into continuous, high-converting prospective student pipelines.',
   },
@@ -94,9 +104,10 @@ export default function SimsScreenshotsModal() {
               <Image
                 src={simsScreenshots[currentIndex].src}
                 alt={simsScreenshots[currentIndex].title}
-                fill
+                width={simsScreenshots[currentIndex].width}
+                height={simsScreenshots[currentIndex].height}
                 sizes="(max-width: 768px) 100vw, 768px"
-                className="object-contain p-2"
+                className="h-full w-full object-contain p-2"
               />
 
               <button

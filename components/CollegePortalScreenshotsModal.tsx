@@ -6,27 +6,37 @@ import { ChevronLeft, ChevronRight, Eye, X } from 'lucide-react';
 
 const collegeScreenshots = [
   {
-    src: '/images/college-portal/higher-ed-architecture.png',
+    src: '/images/college-portal/higher-ed-architecture.webp',
+    width: 796,
+    height: 599,
     title: 'Higher Ed vs. K-12 Needs Architecture',
     subtitle: 'Tailored institutional workflows separating course-focused university portals and NEP credit mobility from K-12 needs.',
   },
   {
-    src: '/images/college-portal/college-conversion-ui.png',
+    src: '/images/college-portal/college-conversion-ui.webp',
+    width: 774,
+    height: 616,
     title: 'Interactive Degree & Course Grids',
     subtitle: 'Searchable department course grids with 30-second quick-apply inquiry modals for prospective students.',
   },
   {
-    src: '/images/college-portal/college-portal-stack.png',
+    src: '/images/college-portal/college-portal-stack.webp',
+    width: 785,
+    height: 616,
     title: 'The Stack & Performance (98/100 PageSpeed)',
     subtitle: 'Modern Next.js and Tailwind CSS foundation with GA4/GTM conversion tracking and sub-second load times.',
   },
   {
-    src: '/images/college-portal/college-registration-flow.png',
+    src: '/images/college-portal/college-registration-flow.webp',
+    width: 793,
+    height: 552,
     title: 'Frictionless Mobile Registration',
     subtitle: 'Mobile-first student inquiry forms connected directly to institutional counseling desks and GTM event feeds.',
   },
   {
-    src: '/images/college-portal/college-program-pathways.png',
+    src: '/images/college-portal/college-program-pathways.webp',
+    width: 794,
+    height: 542,
     title: 'Program & Campus Pathways',
     subtitle: 'Clear multi-track curriculum displays, faculty listings, and campus lab/hostel facility showcases.',
   },
@@ -94,9 +104,10 @@ export default function CollegePortalScreenshotsModal() {
               <Image
                 src={collegeScreenshots[currentIndex].src}
                 alt={collegeScreenshots[currentIndex].title}
-                fill
+                width={collegeScreenshots[currentIndex].width}
+                height={collegeScreenshots[currentIndex].height}
                 sizes="(max-width: 768px) 100vw, 768px"
-                className="object-contain p-2"
+                className="h-full w-full object-contain p-2"
               />
 
               <button

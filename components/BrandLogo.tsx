@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function BrandLogo() {
   return (
     <Image
-      src="/software-lab-logo.png"
+      src="/software-lab-logo.webp"
       alt="The Software Lab"
       width={420}
       height={100}
